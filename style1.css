@@ -1,0 +1,38 @@
+@keyframes animate {
+    40%,
+    60% {
+      left: 100%;
+      transform: translateX(40deg);
+    }
+    100% {
+      left: 0%;
+    }
+  }
+  
+  .teslaWrite:before {
+    animation: animate 4s steps(12) infinite;
+  }
+
+
+  /* For all browsers */
+::-webkit-scrollbar {
+  width: 6px; /* width of the scrollbar */
+  height: 0px !important;
+  overflow-x: hidden !important;
+  /* height: 50px; */
+}
+
+::-webkit-scrollbar-track {
+  background: #fff; /* color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  background: linear-gradient( to right,#a106f4,#e707fa);
+  box-shadow: 0 20px 30px -7px rgba(97, 118, 238, 0.5);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient( to left,#a106f4,#e707fa);
+  box-shadow: 0 20px 30px -7px rgba(97, 118, 238, 0.5);
+}
